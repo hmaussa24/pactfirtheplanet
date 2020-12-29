@@ -45,7 +45,7 @@ export default class Facebook extends Component {
     }
 
     guardat = async (data) => {
-        await axios.post('http://127.0.0.1:4500/registro', data)
+        await axios.post('http://inmyhouse.co:4500/registro', data)
             .then(response => {
                 if (response.data.status) {
                     console.log('ok')
@@ -73,7 +73,7 @@ export default class Facebook extends Component {
                     <p>
 
                         <FacebookShareButton
-                            url={"http://pactfortheplanet.com"}
+                            url={"http://inmyhouse.co"}
                             quote={"CampersTribe - World is yours to explore"}
                             hashtag="#PactForThePlanet"
                             className='compartir'
@@ -81,7 +81,7 @@ export default class Facebook extends Component {
                             <FacebookIcon size={36} /> <h6>Facebook </h6>
                         </FacebookShareButton>
                         <TwitterShareButton
-                            url={"http://pactfortheplanet.com"}
+                            url={"http://inmyhouse.co"}
                             quote={"CampersTribe - World is yours to explore"}
                             hashtag="#PactForThePlanet"
                             className='compartir'

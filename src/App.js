@@ -9,7 +9,7 @@ function App() {
   const [all, setAll] = useState([])
   const [count, setCount] = useState(null)
   const getdat = async () => {
-    await axios.get('http://127.0.0.1:4500/all')
+    await axios.get('http://inmyhouse.co:4500/all')
       .then(async response => {
         //console.log(response.data)
         await setAll(response.data)
@@ -19,7 +19,7 @@ function App() {
   }
 
   const getcount = async () => {
-    await axios.get('http://127.0.0.1:4500/count')
+    await axios.get('http://inmyhouse.co:4500/count')
       .then(async response => {
         //console.log(response.data)
         await setCount(response.data.result.numero)
