@@ -1,6 +1,32 @@
 .App {
-  text-align: center;
+width: 100%;
+margin-top: 100px;
 }
+
+.facebook{
+  float: left;
+  width: 30%;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.compartir{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pacto{
+  width: 60%;
+  text-align: justify;
+  margin-top: 20px;
+  float: left;
+  margin-left: 20px;
+}
+
+.boton{
+  width: 100%;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +62,36 @@
     transform: rotate(360deg);
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .facebook{
+    width: 90%;
+    margin-left: 15px;
+  }
+  
+  .pacto{
+    width: 90%;
+
+  }
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 900px) {
+
+  .facebook{
+    width: 90%;
+    margin-left: 15px;
+  }
+  
+  .pacto{
+    width: 90%;
+
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
